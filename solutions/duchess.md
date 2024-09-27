@@ -1,0 +1,47 @@
+[![CICD-SEC-6 Insufficient Credential Hygiene](https://img.shields.io/badge/CICD--SEC--6-Insufficient%20Credential%20Hygiene-brightgreen)](https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-06-Insufficient-Credential-Hygiene)
+
+Secrets are often pushed to the SCM unintentionally. This makes them accessible to any user with Read permission on the repository.
+
+A common mistake when trying to mitigate the issue is to remove the secret from the branch where the secret was committed to, while the secret is left exposed in past commits - which are still accessible to anyone with access to the repository.
+
+Finding secrets manually in past commits might be tedious, however there are plenty of secret scanners that can be used to automate the process.
+
+
+
+1. Clone the repository.
+
+    ```bash
+    git clone http://localhost:3000/Wonderland/duchess.git
+    ```
+
+
+2. Download [Gitleaks](https://github.com/zricethezav/gitleaks), or any other repository secret scanner.
+3. Run Gitleaks against the repository:
+
+    ```bash
+    gitleaks detect -v
+    ```
+
+
+4. Grab the pypi token.
+
+    ```json
+    {
+    	"Description": "PyPI upload token",
+    	"StartLine": 8,
+    	"EndLine": 8,
+    	"StartColumn": 13,
+    	"EndColumn": 184,
+    	"Match": "xxxx",
+    	"Secret": "xxx",
+    	"File": ".pypirc",
+    	"Commit": "xxx",
+    	"Entropy": 5.538379,
+    	"Author": "Asaf",
+    	"Email": "asaf@cidersecurity.io",
+    	"Date": "2021-11-16T09:22:31Z",
+    	"Message": ".",
+    	"Tags": [],
+    	"RuleID": "pypi-upload-token"
+    }
+    ```

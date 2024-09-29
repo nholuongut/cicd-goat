@@ -5,6 +5,7 @@
 ![Docker pulls](https://badgen.net/docker/pulls/cidersecurity/goat-jenkins-server)
 ![Version](https://img.shields.io/docker/v/cidersecurity/goat-jenkins-server?sort=semver&style=plastic)
 
+### [View all Roadmaps](https://github.com/nholuongut/all-roadmaps) &nbsp;&middot;&nbsp; [Best Practices](https://github.com/nholuongut/all-roadmaps/blob/main/public/best-practices/) &nbsp;&middot;&nbsp; [Questions](https://www.linkedin.com/in/nholuong/)
 
 Deliberately vulnerable CI/CD environment.
 Hack CI/CD pipelines, capture the flags. :triangular_flag_on_post:
@@ -106,6 +107,8 @@ See [Contributing](CONTRIBUTING.md).
 * [Linkedin](https://www.linkedin.com/in/nholuong/)
 * [Email Address](luongutnho@hotmail.com) 
 
+![](https://i.imgur.com/waxVImv.png)
+![](bitfield.png)
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/nholuong)
 
 # License

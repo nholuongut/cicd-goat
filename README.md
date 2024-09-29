@@ -100,13 +100,6 @@ docker compose up -d
 ## Contributing
 See [Contributing](CONTRIBUTING.md).
 
-### [Contact ]
-* [Name: nho Luong]
-* [Skype](luongutnho_skype)
-* [Github](https://github.com/nholuongut/)
-* [Linkedin](https://www.linkedin.com/in/nholuong/)
-* [Email Address](luongutnho@hotmail.com) 
-
 ![](https://i.imgur.com/waxVImv.png)
 ![](bitfield.png)
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/nholuong)
